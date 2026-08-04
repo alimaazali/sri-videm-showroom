@@ -550,16 +550,6 @@ Do not replace them with stock images.
 
 The overall experience should feel like a premium digital showroom where users naturally explore collections, open category pages, browse products in a spacious responsive grid, view product details, and contact the showroom via WhatsApp or by visiting the physical location.
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6a9dbdd1-0483-4552-8160-320e6d5625ee).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
