@@ -23,9 +23,9 @@ export const site = {
     { days: "Sunday", time: "10:30 AM – 8:30 PM" },
   ],
   mapsEmbed:
-    "https://www.google.com/maps?q=furniture+showroom+Kukatpally+Hyderabad&output=embed",
+    "https://www.google.com/maps?q=Videmsfurniture%2C+Panama+Godowns%2C+Vanasthalipuram%2C+Hyderabad&t=k&z=18&output=embed",
   mapsDirections:
-    "https://www.google.com/maps/search/?api=1&query=Sri+Videms+Furniture+Hyderabad",
+    "https://www.google.com/maps/search/?api=1&query=Videmsfurniture%2C+Panama+Godowns%2C+Vanasthalipuram%2C+Hyderabad",
 } as const;
 
 export function whatsappLink(message: string): string {

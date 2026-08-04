@@ -32,7 +32,11 @@ export function Hero() {
             alt="Sri Videm's Furniture showroom in Hyderabad"
             fetchPriority="high"
             decoding="async"
-            className="h-full w-full origin-center object-cover animate-kenburns"
+            className={`h-full w-full origin-center object-cover animate-kenburns max-[768px]:animate-none ${
+              index === 0
+                ? "max-[768px]:object-[27%_center]"
+                : "max-[768px]:object-[52%_48%]"
+            }`}
           />
         </motion.div>
       </AnimatePresence>
@@ -49,16 +53,16 @@ export function Hero() {
           className="max-w-3xl rounded-3xl glass-panel p-7 sm:p-10 md:p-14"
         >
           <p className="text-[0.65rem] font-semibold tracking-[0.32em] text-white/70 uppercase">
-            Hyderabad · Digital Showroom
+            VIDEM'S · Digital Showroom
           </p>
           <h1 className="mt-5 font-display text-[2.6rem] leading-[1.05] text-white sm:text-6xl lg:text-7xl">
             Furniture That Completes Every Home
           </h1>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">
+          {/* <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">
             Discover beautifully crafted furniture collections for every room—from
             luxurious sofas and elegant dining sets to stylish bedrooms, office furniture
             and handcrafted wooden collections—all under one roof.
-          </p>
+          </p> */}
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             {[
