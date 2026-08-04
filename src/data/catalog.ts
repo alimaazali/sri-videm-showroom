@@ -16,7 +16,7 @@ import swingSofa from "@/assets/Wooden_Swing_Sofa.webp.asset.json";
 import showroom1 from "@/assets/Showroom1.png.asset.json";
 import showroom2 from "@/assets/Showroom2.png.asset.json";
 
-export const showroomImages = [showroom1.url, showroom2.url];
+export const showroomImages: [string, string] = [showroom1.url, showroom2.url];
 
 export type Category = {
   slug: string;
