@@ -13,6 +13,9 @@
   "routes": [
     { "src": "/(.*)", "dest": "/$1" }
   ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false
