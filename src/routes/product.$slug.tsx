@@ -5,6 +5,7 @@ import { MessageCircle, Check, ChevronLeft } from "lucide-react";
 import { ProductCard } from "@/components/site/product-card";
 import { WhatsAppCta } from "@/components/site/page-sections";
 import { Reveal } from "@/components/ui/reveal";
+import type { Product } from "@/data/catalog";
 import {
   getProduct,
   getRelatedProducts,
@@ -13,7 +14,7 @@ import {
 import { productInquiry } from "@/data/site";
 
 export const Route = createFileRoute("/product/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { product: Product; related: Product[] } => {
     const product = getProduct(params.slug);
     if (!product) throw notFound();
     return { product, related: getRelatedProducts(product) };

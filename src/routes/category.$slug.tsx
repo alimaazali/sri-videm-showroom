@@ -1,10 +1,11 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { PageHero, WhatsAppCta } from "@/components/site/page-sections";
 import { ProductGrid } from "@/components/site/product-card";
+import type { Category, Product } from "@/data/catalog";
 import { getCategory, getProductsByCategory } from "@/data/catalog";
 
 export const Route = createFileRoute("/category/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { category: Category; products: Product[] } => {
     const category = getCategory(params.slug);
     if (!category) throw notFound();
     return { category, products: getProductsByCategory(params.slug) };
