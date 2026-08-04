@@ -63,7 +63,10 @@ function ProductMissing() {
 }
 
 function ProductPage() {
-  const { product, related } = Route.useLoaderData();
+  const { product, related } = Route.useLoaderData() as {
+    product: Product;
+    related: Product[];
+  };
   const [active, setActive] = useState(0);
   const [zoom, setZoom] = useState({ on: false, x: 50, y: 50 });
 
