@@ -9,9 +9,9 @@ export const site = {
   shortName: "Videm's",
   tagline: "Best Furniture. Best Rate.",
   city: "Hyderabad",
-  phoneDisplay: "+91 91000 00000",
-  phone: "+919100000000",
-  whatsapp: "919100000000",
+  phoneDisplay: "+919666114610",
+  phone: "+919666114610",
+  whatsapp: "+919666114610",
   email: "care@srividemsfurniture.com",
   address: {
     line1: "Sri Videm's Furniture Showroom",

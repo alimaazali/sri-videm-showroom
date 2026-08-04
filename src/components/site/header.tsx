@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/LOGO.png";
 import { site, generalInquiry } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -40,35 +41,12 @@ export function Header() {
       )}
     >
       <div className="container-luxe grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-4 md:py-5">
-        <Link to="/" className="flex min-w-0 items-center gap-3">
-          <span
-            className={cn(
-              "grid h-10 w-10 shrink-0 place-items-center rounded-full border font-display text-lg",
-              transparent
-                ? "border-white/40 text-white"
-                : "border-accent/40 text-accent",
-            )}
-          >
-            V
-          </span>
-          <span className="min-w-0">
-            <span
-              className={cn(
-                "block truncate font-display text-lg leading-tight tracking-wide md:text-xl",
-                transparent ? "text-white" : "text-foreground",
-              )}
-            >
-              Sri Videm's Furniture
-            </span>
-            <span
-              className={cn(
-                "hidden text-[0.6rem] tracking-[0.3em] uppercase sm:block",
-                transparent ? "text-white/70" : "text-muted-foreground",
-              )}
-            >
-              {site.city}
-            </span>
-          </span>
+        <Link to="/" className="shrink-0" aria-label="Sri Videm's Furniture home">
+          <img
+            src={logo}
+            alt="Sri Videm's Furniture"
+            className="h-12 w-auto rounded-sm object-contain md:h-14"
+          />
         </Link>
 
         <div className="flex items-center gap-6">

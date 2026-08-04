@@ -6,17 +6,17 @@
  * any component. Keep all reads going through the helper functions below.
  */
 
-import lShapeSofa from "@/assets/L_shape_corner_sofa_4.png.asset.json";
-import royalSofaSet from "@/assets/Sofa_Set_2_2_2_along_with_centre_table.png.asset.json";
-import bedDressing from "@/assets/Bed_Dressing_table.png.asset.json";
-import designerBed from "@/assets/Designer_Bed.png.asset.json";
-import diningTable from "@/assets/Dining_Table.webp.asset.json";
-import diningTable2 from "@/assets/Dining_Table_2.webp.asset.json";
-import swingSofa from "@/assets/Wooden_Swing_Sofa.webp.asset.json";
-import showroom1 from "@/assets/Showroom1.png.asset.json";
-import showroom2 from "@/assets/Showroom2.png.asset.json";
+import lShapeSofa from "@/assets/L shape corner sofa 4.png";
+import royalSofaSet from "@/assets/Sofa Set (2+2+2) along with centre table.png";
+import bedDressing from "@/assets/Bed_Dressing_table.png";
+import designerBed from "@/assets/Designer Bed.png";
+import diningTable from "@/assets/Dining Table.png";
+import diningTable2 from "@/assets/Dining Table 2.png";
+import swingSofa from "@/assets/Wooden Swing Sofa.png";
+import showroom1 from "@/assets/Showroom1.png";
+import showroom2 from "@/assets/Showroom2.png";
 
-export const showroomImages: [string, string] = [showroom1.url, showroom2.url];
+export const showroomImages: [string, string] = [showroom1, showroom2];
 
 export type Category = {
   slug: string;
@@ -44,7 +44,7 @@ export const categories: Category[] = [
     icon: "sofa",
     intro:
       "Corner sets, recliners and classic three-seaters — upholstered in premium fabrics and built on seasoned hardwood frames.",
-    banner: lShapeSofa.url,
+    banner: lShapeSofa,
   },
   {
     slug: "beds",
@@ -52,7 +52,7 @@ export const categories: Category[] = [
     icon: "bed",
     intro:
       "Designer beds with hydraulic and box storage, cushioned headboards and finishes that anchor the whole bedroom.",
-    banner: designerBed.url,
+    banner: designerBed,
   },
   {
     slug: "dining",
@@ -60,7 +60,7 @@ export const categories: Category[] = [
     icon: "utensils",
     intro:
       "Marble-top and solid wood dining tables paired with sculpted chairs, sized for four, six and eight.",
-    banner: diningTable.url,
+    banner: diningTable,
   },
   {
     slug: "wardrobes",
@@ -68,7 +68,7 @@ export const categories: Category[] = [
     icon: "door-closed",
     intro:
       "Sliding and hinged wardrobes with mirrored panels, soft-close fittings and intelligent internal storage.",
-    banner: bedDressing.url,
+    banner: bedDressing,
   },
   {
     slug: "dressing",
@@ -76,7 +76,7 @@ export const categories: Category[] = [
     icon: "sparkles",
     intro:
       "Mirror units with lit vanities, drawers and display shelving — finished to match your bedroom set.",
-    banner: bedDressing.url,
+    banner: bedDressing,
   },
   {
     slug: "tv-units",
@@ -84,7 +84,7 @@ export const categories: Category[] = [
     icon: "tv",
     intro:
       "Wall-mounted and floor-standing media consoles with concealed cable management and display niches.",
-    banner: designerBed.url,
+    banner: designerBed,
   },
   {
     slug: "coffee-tables",
@@ -92,7 +92,7 @@ export const categories: Category[] = [
     icon: "table",
     intro:
       "Marble, glass and hardwood centre tables designed to sit beautifully at the heart of your living room.",
-    banner: royalSofaSet.url,
+    banner: royalSofaSet,
   },
   {
     slug: "office",
@@ -100,7 +100,7 @@ export const categories: Category[] = [
     icon: "briefcase",
     intro:
       "Executive desks, workstations and ergonomic seating for home studies and commercial floors.",
-    banner: diningTable2.url,
+    banner: diningTable2,
   },
   {
     slug: "swing",
@@ -108,7 +108,7 @@ export const categories: Category[] = [
     icon: "waves",
     intro:
       "Hand-carved teak jhoolas with brass chains and free-standing frames — a heritage centrepiece.",
-    banner: swingSofa.url,
+    banner: swingSofa,
   },
   {
     slug: "wooden",
@@ -116,7 +116,7 @@ export const categories: Category[] = [
     icon: "tree-pine",
     intro:
       "Solid teak and sheesham pieces, hand-finished by craftsmen and made to be handed down.",
-    banner: swingSofa.url,
+    banner: swingSofa,
   },
   {
     slug: "display-units",
@@ -124,7 +124,7 @@ export const categories: Category[] = [
     icon: "layout-grid",
     intro:
       "Crockery cabinets, bookshelves and open display systems in glass, wood and metal.",
-    banner: bedDressing.url,
+    banner: bedDressing,
   },
   {
     slug: "drawers",
@@ -132,7 +132,7 @@ export const categories: Category[] = [
     icon: "archive",
     intro:
       "Chests of drawers and bedside storage with smooth channel runners and durable laminates.",
-    banner: designerBed.url,
+    banner: designerBed,
   },
   {
     slug: "chairs",
@@ -140,7 +140,7 @@ export const categories: Category[] = [
     icon: "armchair",
     intro:
       "Accent chairs, dining chairs and lounge seating in velvet, leatherette and woven fabric.",
-    banner: diningTable2.url,
+    banner: diningTable2,
   },
   {
     slug: "home-decor",
@@ -148,7 +148,7 @@ export const categories: Category[] = [
     icon: "flower",
     intro:
       "Mirrors, lighting, artefacts and finishing touches curated alongside our furniture collections.",
-    banner: royalSofaSet.url,
+    banner: royalSofaSet,
   },
 ];
 
@@ -161,7 +161,7 @@ export const products: Product[] = [
       "Six-seater corner sofa with adjustable headrests and diamond-quilted back.",
     description:
       "A generous corner arrangement built for family evenings. The seat cushions are high-density foam wrapped in soft suede-finish fabric, while adjustable headrests let each person find their own angle. Quilted detailing on the backrest adds quiet structure without shouting for attention.",
-    images: [lShapeSofa.url, royalSofaSet.url],
+    images: [lShapeSofa, royalSofaSet],
     features: [
       "Adjustable ratchet headrests",
       "High-density foam seating",
@@ -178,7 +178,7 @@ export const products: Product[] = [
       "Hand-carved traditional sofa set finished in champagne gold with centre table.",
     description:
       "A statement drawing-room set with hand-carved crowns, scrolled arms and antique gold leafing. Supplied as three-seater, two-seater and settee with a matching glass-top centre table.",
-    images: [royalSofaSet.url, lShapeSofa.url],
+    images: [royalSofaSet, lShapeSofa],
     features: [
       "Hand-carved crown and arms",
       "Champagne gold leaf finish",
@@ -195,7 +195,7 @@ export const products: Product[] = [
       "Onyx-pattern marble top on a two-tone base with hidden lower shelf.",
     description:
       "A low, wide centre table with a polished onyx-pattern top and a curved two-tone base. The recessed lower shelf keeps remotes and magazines out of sight.",
-    images: [lShapeSofa.url],
+    images: [lShapeSofa],
     features: ["Polished marble top", "Concealed lower shelf", "Rounded safety edges"],
     materials: ["Natural marble", "Engineered wood base", "PU high-gloss finish"],
   },
@@ -207,7 +207,7 @@ export const products: Product[] = [
       "King bed with emerald velvet headboard, brass inlay and drawer storage.",
     description:
       "A contemporary king-size bed with a deep emerald velvet headboard divided by slim brass inlays. Side drawers and a lift-up base give you full-width storage without disturbing the silhouette.",
-    images: [designerBed.url, bedDressing.url],
+    images: [designerBed, bedDressing],
     features: [
       "Brass inlay diamond panelling",
       "Side drawer + box storage",
@@ -224,7 +224,7 @@ export const products: Product[] = [
       "Glossy white storage bed with tan tufted headboard and mirrored dresser.",
     description:
       "A complete bedroom pairing — a high-gloss white box-storage bed with a button-tufted tan headboard, matched with a mirrored dressing unit that offers hanging space, drawers and open display shelves.",
-    images: [bedDressing.url, designerBed.url],
+    images: [bedDressing, designerBed],
     features: [
       "Button-tufted headboard",
       "Full box storage base",
@@ -241,7 +241,7 @@ export const products: Product[] = [
       "Full-length mirror dresser with drawers, cabinet and glass display shelving.",
     description:
       "A slim-footprint dressing unit combining a full-length mirror, glazed display column, two drawers and a closed cabinet — finished in a light oak and white two-tone palette.",
-    images: [bedDressing.url],
+    images: [bedDressing],
     features: ["Full-length mirror", "Glass display column", "Two drawers + cabinet"],
     materials: ["Engineered wood", "Textured oak laminate", "Toughened mirror"],
   },
@@ -253,7 +253,7 @@ export const products: Product[] = [
       "Marble-top six-seater with Greek-key inlay and high-back carved chairs.",
     description:
       "A formal dining set with an inlaid marble top, turned stone pedestals and six carved high-back chairs upholstered in a damask weave. Built for long dinners and larger families.",
-    images: [diningTable.url, diningTable2.url],
+    images: [diningTable, diningTable2],
     features: [
       "Greek-key brass inlay",
       "Six carved high-back chairs",
@@ -270,7 +270,7 @@ export const products: Product[] = [
       "Compact marble dining table with scroll-motif inlay and four cushioned chairs.",
     description:
       "A four-seater built for apartments — a beige marble top with subtle scroll inlays, carved legs, and four cushioned chairs with polished walnut frames.",
-    images: [diningTable2.url, diningTable.url],
+    images: [diningTable2, diningTable],
     features: ["Apartment-friendly footprint", "Scroll-motif inlay", "Four cushioned chairs"],
     materials: ["Natural marble", "Walnut-finish hardwood", "Linen-blend upholstery"],
   },
@@ -282,7 +282,7 @@ export const products: Product[] = [
       "Free-standing hand-carved jhoola with brass chains and floral upholstery.",
     description:
       "A heritage jhoola carved from solid teak, suspended on heavy brass chains from a free-standing canopy frame — no ceiling drilling required. Upholstered in a floral silk-finish fabric with bolster cushions.",
-    images: [swingSofa.url],
+    images: [swingSofa],
     features: [
       "Free-standing canopy frame",
       "Heavy-duty brass chains",
@@ -299,7 +299,7 @@ export const products: Product[] = [
       "Solid teak seating and frames finished by hand in a traditional carved idiom.",
     description:
       "Our wooden collection is built the slow way — seasoned teak, hand-carved detailing and a hand-rubbed polish that deepens with age.",
-    images: [swingSofa.url, royalSofaSet.url],
+    images: [swingSofa, royalSofaSet],
     features: ["Seasoned solid teak", "Hand-carved detailing", "Hand-rubbed polish"],
     materials: ["Teak wood", "Natural wax polish"],
   },
@@ -311,7 +311,7 @@ export const products: Product[] = [
       "Stone-top executive desk with concealed storage and cushioned visitor chairs.",
     description:
       "A boardroom-grade desk with a polished stone top, cable routing, lockable pedestal storage and a pair of matching cushioned visitor chairs.",
-    images: [diningTable2.url],
+    images: [diningTable2],
     features: ["Lockable pedestal storage", "Integrated cable routing", "Two visitor chairs"],
     materials: ["Engineered wood", "Polished stone top", "Fabric upholstery"],
   },
@@ -323,7 +323,7 @@ export const products: Product[] = [
       "Glazed display column with adjustable shelving and a closed base cabinet.",
     description:
       "A tall display unit with toughened glass doors, adjustable shelves and a closed base for the things you'd rather not show.",
-    images: [bedDressing.url],
+    images: [bedDressing],
     features: ["Toughened glass doors", "Adjustable shelving", "Closed base storage"],
     materials: ["Engineered wood", "Toughened glass", "Metal fittings"],
   },
@@ -335,7 +335,7 @@ export const products: Product[] = [
       "Three-drawer bedside chest with channel runners and a wipe-clean top.",
     description:
       "A compact three-drawer chest that sits neatly beside any of our beds, with smooth channel runners and a durable wipe-clean surface.",
-    images: [designerBed.url],
+    images: [designerBed],
     features: ["Three deep drawers", "Smooth channel runners", "Scratch-resistant top"],
     materials: ["Engineered wood", "Laminate finish", "Steel runners"],
   },
@@ -347,7 +347,7 @@ export const products: Product[] = [
       "High-back accent chair with carved crest and damask upholstery.",
     description:
       "A single carved accent chair that works at the head of a dining table or on its own beside a window.",
-    images: [diningTable.url],
+    images: [diningTable],
     features: ["Carved crest rail", "Deep cushioned seat", "Solid wood legs"],
     materials: ["Hardwood frame", "Damask upholstery"],
   },
@@ -381,21 +381,21 @@ export const featuredCollections = [
     title: "Living Room Collection",
     caption: "Sofas, centre tables and seating",
     href: "/category/sofas",
-    image: lShapeSofa.url,
+    image: lShapeSofa,
     span: "tall" as const,
   },
   {
     title: "Bedroom Collection",
     caption: "Beds, wardrobes and dressers",
     href: "/category/beds",
-    image: designerBed.url,
+    image: designerBed,
     span: "wide" as const,
   },
   {
     title: "Dining Collection",
     caption: "Marble dining sets and chairs",
     href: "/category/dining",
-    image: diningTable.url,
+    image: diningTable,
     span: "wide" as const,
   },
 ];
